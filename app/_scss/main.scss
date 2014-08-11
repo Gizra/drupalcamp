@@ -10,8 +10,7 @@
 		}
 
 		.spread {
-			td:last-child,
-			td:nth-last-child(2) {
+			td:last-child {
 				background: rgba($cyan, .15);
 			}
 		}
