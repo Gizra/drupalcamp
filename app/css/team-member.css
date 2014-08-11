@@ -152,7 +152,7 @@
 
     .team-member.type_half .team-member-links:after {
         top: 60px;
-    };
+    }
 }
 
 @media (min-width:480px) and (max-width:767px) {
@@ -180,7 +180,7 @@
 
     .team-member.type_half {
         width: 100%;
-    };
+    }
 }
 
 @media (max-width:479px) {
@@ -202,5 +202,5 @@
 
     .team-member-links-list,.team-member.type_half .team-member-links-list {
         margin-left: 0;
-    };
+    }
 }
