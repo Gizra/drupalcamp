@@ -1,13 +1,15 @@
 html {
-	direction: rtl;
+	//direction: rtl;
   text-align: right;
+
+  .text-slide {
+    direction: rtl;
+  }
+
+  .navbar-nav {
+
+    li {
+      float: right;
+    }
+  }
 }
-
-*[class*='col-lg'],
-*[class*='col-md'],
-*[class*='col-sm'],
-*[class*='col-xs'] {
-
-	float:right;
-}
-
