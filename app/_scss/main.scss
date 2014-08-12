@@ -1,2 +1,18 @@
 @import 'mixins';
 @import 'rtl';
+
+
+
+.program	{
+	.table-wrapper {
+		th {
+			text-align: right;
+		}
+
+		.spread {
+			td:last-child {
+				background: rgba($cyan, .15);
+			}
+		}
+	}
+}
