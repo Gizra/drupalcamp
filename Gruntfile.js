@@ -115,9 +115,8 @@ module.exports = function (grunt) {
         httpImagesPath: '/images',
         httpGeneratedImagesPath: '/images/generated',
         outputStyle: 'expanded',
-        raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n',
+        raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
         // Allow using @import in the sass files.
-        importPath: '<%= yeoman.app %>/_bower_components'
       },
       dist: {
         options: {
