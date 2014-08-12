@@ -284,25 +284,25 @@ Drop Down Menu Fade Effect
 /*  Jquery Google map Section
 /*----------------------------------------------------*/
 
-    //Google map
-    jQuery('#maps').gMap({
-        address: "House: 325, Road: 2, Mirpur DOHS, Dhaka, Bangladesh",
-        zoom: 16,
-        controls: {
-         panControl: true,
-         zoomControl: true,
-         mapTypeControl: true,
-         scaleControl: true,
-         streetViewControl: true,
-         overviewMapControl: true
-     },
-        markers: [{
-            latitude: 23.835369,
-            longitude: 90.367172,
-            html: "<h4>FIFO Themes</h4>Wordpress, HTML5/CSS Themes",
-            popup: true
-        }]
-    });
+  //Google map
+  jQuery('#maps').gMap({
+    address: "Yigal Alon St 98 Tel-Aviv",
+    zoom: 16,
+    controls: {
+      panControl: true,
+      zoomControl: true,
+      mapTypeControl: true,
+      scaleControl: true,
+      streetViewControl: true,
+      overviewMapControl: true
+    },
+    markers: [{
+      latitude: 32.070247,
+      longitude: 34.794072,
+      html: "<h4>DrupalCamp IL 14, Google Campus TLV</h4>",
+      popup: true
+    }]
+  });
 
 
 
