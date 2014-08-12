@@ -1,5 +1,6 @@
 html {
 	direction: rtl;
+  text-align: right;
 }
 
 *[class*='col-lg'],
@@ -7,6 +8,6 @@ html {
 *[class*='col-sm'],
 *[class*='col-xs'] {
 
-	float:right 
+	float:right;
 }
 
