@@ -19,71 +19,31 @@
           <div class="table-wrapper wow flipInX animated">
             <table class="table">
               <tbody>
-              {% for items in site.data.program %}
-
+              {% for item in site.data.program %}
+                {% if item.data %}
+                  <tr>
+                    <td>{{ item.hour }}</td>
+                    {% for data in item.data  %}
+                    <td>
+                      <a href="{{ data.url }}">
+                        <strong>{{ data.name }} — {{ data.title }}</strong></br>
+                      </a>
+                      <p class="description hidden">{{ data.description }}</p>
+                    </td>
+                    {% endfor  %}
+                  </tr>
+                {% else %}
+                  <tr class="spread">
+                    <td>{{ item.hour }}</td>
+                    <td class="text-center" colspan="2">{{ item.title }}</td>
+                  </tr>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>אולם - 1</th>
+                    <th>אולם - 2</th>
+                  </tr>
+                {% endif%}
               {% endfor %}
-              <tr class="spread">
-                <td>8:30 - 9:00</td>
-                <td class="text-center" colspan="2">התכנסות כיבוד קל ושתיה</td>
-              </tr>
-              <tr>
-                <th>&nbsp;</th>
-                <th>אולם - 1</th>
-                <th>אולם - 2</th>
-              </tr>
-              <tr>
-                <td>9:00 - 10:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
-              <tr>
-                <td>10:00 - 11:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
-              <tr>
-                <td>11:00 - 12:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
-              <tr class="spread">
-                <td>12:00 - 13:00</td>
-                <td class="text-center" colspan="2">הפסקת ארוחת צהריים</td>
-              </tr>
-              <tr>
-                <th>&nbsp;</th>
-                <th>אולם - 1</th>
-                <th>אולם - 2</th>
-              <tr>
-                <td>13:00 - 14:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
-              <tr>
-                <td>14:00 - 15:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
               </tbody>
             </table>
           </div>
