@@ -1,18 +1,51 @@
 @import 'mixins';
 @import 'rtl';
 
+.navbar-custom {
 
+  .navbar-nav {
 
-.program	{
-	.table-wrapper {
-		th {
-			text-align: right;
-		}
+    li {
 
-		.spread {
-			td:last-child {
-				background: rgba($cyan, .15);
-			}
-		}
-	}
+      .btn,
+      .btn:hover {
+        color: white;
+        background-color: $cyan;
+
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+section {
+
+  .container {
+    padding-top: 90px;
+
+    .testimonial  {
+
+      p {
+        font-family: "Open Sans",Helvetica,Arial,sans-serif;
+      }
+    }
+  }
+
+  &.program	{
+
+    .table-wrapper {
+      th {
+        text-align: right;
+      }
+
+      .spread {
+        td:last-child {
+          background: rgba($cyan, .15);
+        }
+      }
+    }
+  }
 }
