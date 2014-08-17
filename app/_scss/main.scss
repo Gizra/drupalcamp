@@ -3,18 +3,23 @@
 
 .navbar-custom {
 
-  .navbar-nav {
+  .navbar-collapse {
+    border-top: 0 none;
+    box-shadow: none;
 
-    li {
+    .navbar-nav {
 
-      .btn,
-      .btn:hover {
-        color: white;
-        background-color: $cyan;
+      li {
 
-        &:before,
-        &:after {
-          display: none;
+        .btn,
+        .btn:hover {
+          color: white;
+          background-color: $cyan;
+
+          &:before,
+          &:after {
+            display: none;
+          }
         }
       }
     }
