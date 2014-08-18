@@ -44,7 +44,20 @@ section {
         text-align: right;
       }
 
+      td {
+        width: 40%;
+
+        &:first-child {
+          width: 15%;
+        }
+      }
+
       .spread {
+
+        td {
+          width: 100%;
+        }
+
         background: rgba($cyan, .15);
       }
 
@@ -62,7 +75,7 @@ section {
       }
 
       .rotate {
-        @include transition-duration(0.8s);
+        @include transition-duration(0.5s);
         @include transition-timing-function(ease-in);
 
         &.deg180 {
