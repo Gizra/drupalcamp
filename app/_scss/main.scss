@@ -1,18 +1,90 @@
+@import "compass/css3/transition";
+@import "compass/css3/transform";
 @import 'mixins';
 @import 'rtl';
 
+.navbar-custom {
 
+  .navbar-nav {
 
-.program	{
-	.table-wrapper {
-		th {
-			text-align: right;
-		}
+    li {
 
-		.spread {
-			td:last-child {
-				background: rgba($cyan, .15);
-			}
-		}
-	}
+      .btn,
+      .btn:hover {
+        color: white;
+        background-color: $cyan;
+
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+section {
+
+  .container {
+    padding-top: 90px;
+
+    .testimonial  {
+
+      p {
+        font-family: "Open Sans",Helvetica,Arial,sans-serif;
+      }
+    }
+  }
+
+  &.program	{
+
+    .table-wrapper {
+
+      th {
+        text-align: right;
+      }
+
+      .spread {
+        background: rgba($cyan, .15);
+      }
+
+      .name {
+        text-decoration: none;
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in);
+        cursor:pointer;
+        cursor:hand;
+
+        &:hover {
+          color: $DarkCyan;
+        }
+      }
+
+      .rotate {
+        @include transition-duration(0.8s);
+        @include transition-timing-function(ease-in);
+
+        &.deg180 {
+          @include transform(rotate(180deg));
+        }
+      }
+
+      .title {
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in);
+        cursor:pointer;
+        cursor:hand;
+
+        &:hover {
+          color: #000000;
+        }
+      }
+
+      .description {
+        display: none;
+      }
+    }
+  }
 }

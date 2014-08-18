@@ -10,7 +10,7 @@ author:
   email: info@gizra.com
 
 # Define the display between the program block / adding a lecture contact form block.
-program_active: true;
+program_active: true
 
 # Grunt handles images and assets.
 exclude: ['images', 'css', 'js', 'fonts',
