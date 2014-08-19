@@ -1,7 +1,31 @@
 @import 'mixins';
 @import 'rtl';
 
+header {
+
+  .mob-menu {
+
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+  }
+}
+
 .navbar-custom {
+
+  .navbar-header {
+    margin-top: 0;
+    float: left !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .navbar-toggle {
+      padding: 10px 20px;
+      margin-top: 15px;
+    }
+  }
 
   .navbar-collapse {
     border-top: 0 none;
@@ -21,7 +45,19 @@
             display: none;
           }
         }
+
+        @media (max-width: 980px) and (min-width: 768px) {
+
+          a {
+            font-size: 12px;
+            padding: 10px 7px;
+          }
+        }
       }
+    }
+
+    @media (max-width: 980px) {
+      margin-top: 60px;
     }
   }
 }
