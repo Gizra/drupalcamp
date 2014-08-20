@@ -42,6 +42,11 @@ section {
 
       th {
         text-align: right;
+
+        @media (max-width: 991px) {
+          width: 50%;
+          text-align: center;
+        }
       }
 
       td {
@@ -61,7 +66,12 @@ section {
         background: rgba($cyan, .15);
       }
 
+      .hour {
+        background: rgba($gray, .10);
+      }
+
       .name {
+        font-weight: bold;
         text-decoration: none;
         @include transition-property(color);
         @include transition-duration(0.5s);
@@ -70,7 +80,7 @@ section {
         cursor:hand;
 
         &:hover {
-          color: $DarkCyan;
+          color: $darkCyan;
         }
       }
 
@@ -84,6 +94,7 @@ section {
       }
 
       .title {
+        font-weight: bold;
         @include transition-property(color);
         @include transition-duration(0.5s);
         @include transition-timing-function(ease-in);
@@ -97,6 +108,7 @@ section {
 
       .description {
         display: none;
+        width: 85%;
       }
     }
   }

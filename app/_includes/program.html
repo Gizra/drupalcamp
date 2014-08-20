@@ -17,7 +17,8 @@
       <div class="row">
         <div class='col-sm-12'>
           <div class="table-wrapper wow flipInX animated">
-            <table class="table">
+            <!--Desktop table-->
+            <table class="table hidden-xs hidden-sm">
               <tbody>
               <thead>
                 <tr>
@@ -33,9 +34,7 @@
                     {% for data in item.data  %}
                     <td>
                       <a href="{{ data.url }}" class="name">
-                        <strong>
-                          <i class="fa fa-user"></i> {{ data.name }}
-                        </strong>
+                        <i class="fa fa-user"></i> {{ data.name }}
                       </a>
                        —
                       <span class="title">
@@ -51,6 +50,43 @@
                   </tr>
                 {% endif%}
               {% endfor %}
+              </tbody>
+            </table>
+
+            <!--Small-devices table-->
+            <table class="table small-devices hidden-lg hidden-md">
+              <tbody>
+                <thead>
+                  <tr>
+                    <th>אולם - 1</th>
+                    <th>אולם - 2</th>
+                  </tr>
+                </thead>
+                {% for item in site.data.program %}
+                {% if item.data %}
+                <tr>
+                  <td colspan="2" class="hour text-center">{{ item.hour }}</td>
+                </tr>
+                {% for data in item.data %}
+                <tr>
+                <td colspan="1">
+                  <a href="{{ data.url }}" class="name">
+                    <i class="fa fa-user"></i> {{ data.name }}
+                  </a>
+                  —
+                  <span class="title">
+                    {{ data.title }} <i class="fa fa-caret-square-o-down rotate"></i>
+                  </span>
+                  <p class="description">{{ data.description }}</p>
+                 </td>
+                  {% endfor  %}
+                </tr>
+                {% else %}
+                <tr class="spread">
+                  <td class="text-center" colspan="2"><span> {{ item.hour }}  | </span>{{ item.title }}</td>
+                </tr>
+                {% endif%}
+                {% endfor %}
               </tbody>
             </table>
           </div>
