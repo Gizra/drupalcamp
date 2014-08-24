@@ -1,5 +1,5 @@
 // Hiding menu when clicked in the mobile view.
-jQuery(".navbar-nav li a").click(function(e){
+jQuery(".navbar-nav li a").click(function() {
   var wi = $(window).width(); // Stores the numerical value of the width into the variable "wi".
 
   if (wi <= 979) {
@@ -8,4 +8,6 @@ jQuery(".navbar-nav li a").click(function(e){
     var option  = data ? 'toggle' : $this.data();
     target.collapse(option);
   }
+  jQuery(".active").removeClass("active");
+  jQuery(".current").addClass("active");
 });
