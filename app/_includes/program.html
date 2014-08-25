@@ -18,7 +18,7 @@
         <div class='col-sm-12'>
           <div class="table-wrapper wow flipInX animated">
             <!--Desktop table-->
-            <table class="table hidden-xs hidden-sm">
+            <table class="table hidden-xs">
               <tbody>
               <thead>
                 <tr>
@@ -54,14 +54,8 @@
             </table>
 
             <!--Small-devices table-->
-            <table class="table small-devices hidden-lg hidden-md">
+            <table class="table small-devices hidden-lg hidden-md hidden-sm">
               <tbody>
-                <thead>
-                  <tr>
-                    <th>אולם - 1</th>
-                    <th>אולם - 2</th>
-                  </tr>
-                </thead>
                 {% for item in site.data.program %}
                 {% if item.data %}
                 <tr>
@@ -69,7 +63,8 @@
                 </tr>
                 {% for data in item.data %}
                 <tr>
-                <td colspan="1">
+                <td colspan="2">
+                  <span class="hall"><strong>אולם - {{ forloop.index }} </strong></span>
                   <a href="{{ data.url }}" class="name">
                     <i class="fa fa-user"></i> {{ data.name }}
                   </a>

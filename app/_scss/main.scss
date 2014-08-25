@@ -42,18 +42,15 @@ section {
 
       th {
         text-align: right;
-
-        @media (max-width: 991px) {
-          width: 50%;
-          text-align: center;
-        }
       }
 
       td {
-        width: 40%;
+        @media (min-width: 768px) {
+          width: 40%;
 
-        &:first-child {
-          width: 15%;
+          &:first-child {
+            width: 15%;
+          }
         }
       }
 
@@ -108,7 +105,13 @@ section {
 
       .description {
         display: none;
-        width: 85%;
+        @media (min-width: 769px) {
+          width: 85%;
+        }
+      }
+
+      .hall {
+        margin-left: 70px;
       }
     }
   }
