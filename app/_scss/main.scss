@@ -3,6 +3,11 @@
 @import 'mixins';
 @import 'rtl';
 
+ul.text-slide {
+  list-style: none;
+  padding: 0;
+}
+
 .navbar-custom {
 
   .navbar-nav {
@@ -32,6 +37,20 @@ section {
 
       p {
         font-family: "Open Sans",Helvetica,Arial,sans-serif;
+      }
+    }
+  }
+
+  .team-members {
+
+    > div {
+      float: right;
+
+      &:first-child {
+
+        @media (min-width: 992px) {
+          margin-right: 95px;
+        }
       }
     }
   }
