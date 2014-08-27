@@ -13,7 +13,7 @@ author:
 program_active: true
 
 # Define if there's lecturers in the camp.
-lecturers: false;
+lecturers: false
 
 # Grunt handles images and assets.
 exclude: ['images', 'css', 'js', 'fonts',
