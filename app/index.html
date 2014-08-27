@@ -8,7 +8,9 @@ title: Drupal camp
 <!-- /Section 2 -->
 
 <!-- Section 3 -->
-  {% include lecturers.html %}
+  {% if site.lecturers %}
+    {% include lecturers.html %}
+  {% endif %}
 <!-- /Section 3 -->
 
 <!-- Program -->

@@ -60,7 +60,9 @@
                   <ul class="nav navbar-nav navbar-left">
                     <li class="active"><a href="#section">ראשי</a></li>
                     <li><a href="#section2">על הכנס</a></li>
-                    <li><a href="#section3">מרצים</a></li>
+                    {% if site.lecturers %}
+                      <li><a href="#section3">מרצים</a></li>
+                    {% endif %}
                     <li><a href="#section4">תוכנית הכנס</a></li>
                     <li><a href="#section5">ציטוטים</a></li>
                     <li><a href="#section6">חסות</a></li>

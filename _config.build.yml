@@ -8,3 +8,6 @@ show_drafts: false
 
 # Define the display between the program block / adding a lecture contact form block.
 program_active: false;
+
+# Define if there's lecturers in the camp.
+lecturers: false;

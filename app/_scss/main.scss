@@ -6,6 +6,16 @@
 ul.text-slide {
   list-style: none;
   padding: 0;
+
+  li {
+    @media (max-width: 480px) {
+      font-size: 25px;
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 38px;
+    }
+  }
 }
 
 header {
@@ -98,6 +108,10 @@ section {
         @media (min-width: 992px) {
           margin-right: 95px;
         }
+      }
+
+      .team-member-image:hover img {
+        @include transform(rotate(0deg));
       }
     }
   }
