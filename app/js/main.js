@@ -1,6 +1,7 @@
 // Hiding menu when clicked in the mobile view.
 jQuery(".navbar-nav li a").click(function() {
-  var wi = $(window).width(); // Stores the numerical value of the width into the variable "wi".
+  // Stores the numerical value of the width into the variable "wi".
+  var wi = $(window).width();
 
   if (wi <= 979) {
     var target  = jQuery("#menu");
@@ -10,4 +11,14 @@ jQuery(".navbar-nav li a").click(function() {
   }
   jQuery(".active").removeClass("active");
   jQuery(".current").addClass("active");
+});
+
+// Dropdown Menu Fade on hover.
+jQuery(document).ready(function(){
+  // Display the modal lead form on the pros layout when clicking.
+  // Make sure it only execute on mobile.
+  $('.program').find('.title').click(function() {
+    $(this).siblings('.description').slideToggle(800);
+    $(this).find('i').toggleClass("deg180");
+  });
 });

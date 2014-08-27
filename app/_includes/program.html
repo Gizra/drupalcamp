@@ -1,0 +1,93 @@
+<section id="section4" class="program">
+  <div class="service-wrap">
+    <div class="container">
+      <!-- Title row -->
+      <div class="row">
+        <div class="col-md-12 big-title wow bounceIn">
+          <h2>תוכנית הכנס</h2>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12 sub-title text-center wow slideInRight">
+          <h3>דרופלקאמפ ישראל הינו הכנס המרכזי במהלך השנה המפגיש ומחבר את חברי הקהילה כולה ומאפשר לחברים חדשים שער כניסה נעים ועשיר.</h3>
+        </div>
+      </div>
+      <!-- /Title row -->
+
+      <!-- Table -->
+      <div class="row">
+        <div class='col-sm-12'>
+          <div class="table-wrapper wow flipInX animated">
+            <!--Desktop table-->
+            <table class="table hidden-xs">
+              <tbody>
+              <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>אולם - 1</th>
+                  <th>אולם - 2</th>
+                </tr>
+              </thead>
+              {% for item in site.data.program %}
+                {% if item.data %}
+                  <tr>
+                    <td>{{ item.hour }}</td>
+                    {% for data in item.data  %}
+                    <td>
+                      <a href="{{ data.url }}" class="name">
+                        <i class="fa fa-user"></i> {{ data.name }}
+                      </a>
+                       —
+                      <span class="title">
+                        {{ data.title }} <i class="fa fa-caret-square-o-down rotate"></i>
+                      </span>
+                      <p class="description">{{ data.description }}</p>
+                    </td>
+                    {% endfor  %}
+                  </tr>
+                {% else %}
+                  <tr class="spread">
+                    <td class="text-center" colspan="3"><span> {{ item.hour }}  | </span>{{ item.title }}</td>
+                  </tr>
+                {% endif%}
+              {% endfor %}
+              </tbody>
+            </table>
+
+            <!--Small-devices table-->
+            <table class="table small-devices hidden-lg hidden-md hidden-sm">
+              <tbody>
+                {% for item in site.data.program %}
+                {% if item.data %}
+                <tr>
+                  <td colspan="2" class="hour text-center">{{ item.hour }}</td>
+                </tr>
+                {% for data in item.data %}
+                <tr>
+                <td colspan="2">
+                  <span class="hall"><strong>אולם - {{ forloop.index }} </strong></span>
+                  <a href="{{ data.url }}" class="name">
+                    <i class="fa fa-user"></i> {{ data.name }}
+                  </a>
+                  —
+                  <span class="title">
+                    {{ data.title }} <i class="fa fa-caret-square-o-down rotate"></i>
+                  </span>
+                  <p class="description">{{ data.description }}</p>
+                 </td>
+                  {% endfor  %}
+                </tr>
+                {% else %}
+                <tr class="spread">
+                  <td class="text-center" colspan="2"><span> {{ item.hour }}  | </span>{{ item.title }}</td>
+                </tr>
+                {% endif%}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Table -->
+    </div>
+  </div>
+</section>

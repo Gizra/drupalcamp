@@ -481,102 +481,13 @@ title: Drupal camp
 </section>
 <!-- /Section 3 -->
 
-<!-- Section 4 -->
-<section id="section4" class="program">
-  <div class="service-wrap">
-    <div class="container">
-      <!-- Title row -->
-      <div class="row">
-        <div class="col-md-12 big-title wow bounceIn">
-          <h2>תוכנית הכנס</h2>
-        </div>
-
-        <div class="clearfix"></div>
-
-        <div class="col-md-12 sub-title text-center wow slideInRight">
-          <h3>דרופלקאמפ ישראל הינו הכנס המרכזי במהלך השנה המפגיש ומחבר את חברי הקהילה כולה ומאפשר לחברים חדשים שער כניסה נעים ועשיר.</h3>
-        </div>
-      </div>
-      <!-- /Title row -->
-
-      <!-- Program -->
-      <div class="row">
-        <div class='col-sm-12'>
-          <div class="table-wrapper wow flipInX animated">
-            <table class="table">
-              <tbody>
-              <tr class="spread">
-                <td>8:30 - 9:00</td>
-                <td class="text-center" colspan="2">התכנסות כיבוד קל ושתיה</td>
-              </tr>
-              <tr>
-                <th></th>
-                <th>אולם - 1</th>
-                <th>אולם - 2</th>
-              </tr>
-              <tr>
-                <td>9:00 - 10:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
-              <tr>
-                <td>10:00 - 11:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
-              <tr>
-                <td>11:00 - 12:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
-              <tr class="spread">
-                <td>12:00 - 13:00</td>
-                <td class="text-center" colspan="2">הפסקת ארוחת צהריים</td>
-              </tr>
-              <tr>
-                <th></th>
-                <th>אולם - 1</th>
-                <th>אולם - 2</th>
-              <tr>
-                <td>13:00 - 14:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
-              <tr>
-                <td>14:00 - 15:00</td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-                <td>שם המרצה</strong></br>
-                  <p>תאור מקוצר על גבי ההרצאה</p>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <!-- Program -->
-    </div>
-	</div>
-</section>
-<!-- /Section 4 -->
+<!-- Program -->
+  {% if site.program_active %}
+    {% include program.html %}
+  {% else %}
+    {% include lecture_contact_form.html %}
+  {% endif %}
+<!-- /Program -->
 
 <!-- Section 5 -->
 <section id="section5" class="clients">
@@ -853,33 +764,33 @@ title: Drupal camp
           <form method="post" class="reply" id="contact">
             <fieldset>
               <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInRight">
                   <div class="row">
                     <div class="col-md-12">
-                      <input class="form-control" id="name" name="name" type="text" placeholder="Name" value="" required>
-                    </div>
-                    <div class="col-md-12">
-                      <input class="form-control" type="email" id="email" name="email" placeholder="Email" value="" required>
-                    </div>
-                    <div class="col-md-12">
-                      <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject" value="" required>
+                      <textarea class="form-control" id="text" name="text" rows="3" cols="40" placeholder="ההודעה שלך" required></textarea>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInRight">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
                   <div class="row">
                     <div class="col-md-12">
-                      <textarea class="form-control" id="text" name="text" rows="3" cols="40" placeholder="Your Message" required></textarea>
+                      <input class="form-control" id="name" name="name" type="text" placeholder="שם" value="" required>
+                    </div>
+                    <div class="col-md-12">
+                      <input class="form-control" type="email" id="email" name="email" placeholder="אימייל" value="" required>
+                    </div>
+                    <div class="col-md-12">
+                      <input class="form-control" type="text" id="phone" name="phone" placeholder="טלפון" value="" required>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 wow fadeInUp">
-                  <button type="submit" class="btn btn-2 btn-2c">Send</button>
-                  <div class="success alert-success alert" style="display:none">Your message has been sent successfully.</div>
-                  <div class="error alert-danger alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
+                  <button type="submit" class="btn btn-2 btn-2c">שלח</button>
+                  <div class="success alert-success alert" style="display:none">ההודעה שלך נשלחה בהצלחה.</div>
+                  <div class="error alert-danger alert" style="display:none">דואר אלקטרוני חייב להיות בתוקף ומסר צריך להיות ארוך יותר מ100 תווים.</div>
                 </div>
               </div>
             </fieldset>

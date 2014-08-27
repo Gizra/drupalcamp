@@ -470,9 +470,9 @@ jQuery(document).ready(function(){
         e.preventDefault();
         var name = $("#name").val();
         var email = $("#email").val();
-        var subject = $("#subject").val();
+        var phone = $("#phone").val();
         var text = $("#text").val();
-        var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&text=' + text;
+        var dataString = 'name=' + name + '&email=' + email + '&phone=' + phone + '&text=' + text;
 
 
         function isValidEmail(emailAddress) {
@@ -483,7 +483,8 @@ jQuery(document).ready(function(){
         if (isValidEmail(email) && (text.length > 100) && (name.length > 1)) {
             $.ajax({
                 type: "POST",
-                url: "ajax/process.php",
+                url: "http://getsimpleform.com/messages/ajax?form_api_token=82540053db7f4e09bfc21bca3f7edada",
+                dataType: 'jsonp',
                 data: dataString,
                 success: function () {
                     $('.success').fadeIn(1000).delay(3000).fadeOut(1000);
