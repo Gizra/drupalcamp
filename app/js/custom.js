@@ -56,10 +56,10 @@ Drop Down Menu Fade Effect
     jQuery('.nav').onePageNav({
             filter: ':not(.external)',
             begin: function() {
-            console.log("start")
             },
             end: function() {
-            console.log("stop")
+              jQuery(".active").removeClass("active");
+              jQuery(".current").addClass("active");
             }
         });
 
