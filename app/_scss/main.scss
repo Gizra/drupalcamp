@@ -103,6 +103,13 @@ section {
         font-family: "Open Sans",Helvetica,Arial,sans-serif;
       }
     }
+
+    .sponsors-deals {
+
+      @media (min-width: 980px) {
+        margin-top: 20px;
+      }
+    }
   }
 
   .team-members {
