@@ -9,8 +9,6 @@ jQuery(".navbar-nav li a").click(function() {
     var option  = data ? 'toggle' : $this.data();
     target.collapse(option);
   }
-  jQuery(".active").removeClass("active");
-  jQuery(".current").addClass("active");
 });
 
 // Dropdown Menu Fade on hover.
