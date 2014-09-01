@@ -12,6 +12,9 @@ author:
 # Define the display between the program block / adding a lecture contact form block.
 program_active: true
 
+# Define if there's lecturers in the camp.
+lecturers: false
+
 # Grunt handles images and assets.
 exclude: ['images', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
