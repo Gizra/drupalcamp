@@ -221,3 +221,15 @@ section {
 .scrollup {
   z-index: 9998;
 }
+
+.footer-wrap {
+  background: #F1F4F9;
+
+  .container {
+    padding-bottom: 35px;
+
+    .sponsors-logos {
+      padding: 30px 0;
+    }
+  }
+}
