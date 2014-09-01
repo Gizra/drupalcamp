@@ -90,6 +90,13 @@ section {
   .container {
     padding-top: 90px;
 
+    .sub-title {
+
+      h3 {
+        margin: 0 auto;
+      }
+    }
+
     .testimonial  {
 
       p {
@@ -110,8 +117,15 @@ section {
         }
       }
 
-      .team-member-image:hover img {
-        @include transform(rotate(0deg));
+      .team-member-image {
+
+        img {
+          width: 100%;
+        }
+
+        &:hover img{
+          @include transform(rotate(0deg));
+        }
       }
     }
   }
