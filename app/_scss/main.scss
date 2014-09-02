@@ -57,6 +57,7 @@ header {
         .btn:hover {
           color: white;
           background-color: $cyan;
+          margin-right: 10px;
 
           &:before,
           &:after {
