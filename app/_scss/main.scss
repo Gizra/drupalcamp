@@ -88,6 +88,15 @@ header {
 
 section {
 
+  @media (max-width: 480px) {
+    max-width: 87%;
+
+    .icons {
+      left: 0;
+      top: 60%;
+    }
+  }
+
   .container {
     padding-top: 90px;
 
@@ -234,14 +243,13 @@ section {
 
       a {
         display: inline-flex;
-        padding: 0 15px;
+        padding: 0 15px 40px;
 
         &#gizra {
           font-family: Abril Fatface;
           font-size: 60px;
           text-decoration: none;
           color: #e27058;
-          padding-bottom: 40px;
         }
       }
     }
