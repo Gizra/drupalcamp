@@ -256,3 +256,11 @@ section {
     }
   }
 }
+
+@media (min-width: 800px) {
+  .testimonial-wrap,
+  .fun-wrap {
+    background-position-y: center;
+    background-size: 302%;
+  }
+}

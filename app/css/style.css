@@ -1057,7 +1057,7 @@ div.content-box.big div.content-box-info p {
 
 
 .testimonial-wrap {
-    background: url('../img/plx2.jpg') 50% 0 fixed;
+    background: url('../img/plx2.jpg') 50% 0 no-repeat fixed;
     
 }
 
@@ -1070,7 +1070,7 @@ div.content-box.big div.content-box-info p {
 }
 
 .fun-wrap {
-    background: url('../img/plx3.jpg') 50% 0 fixed;
+    background: url('../img/plx3.jpg') 50% 0  no-repeat fixed;
 }
 
 
