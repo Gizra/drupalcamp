@@ -1028,7 +1028,7 @@ div.content-box.big div.content-box-info p {
 }
 
 .texture-layer, .bg-overlay {
-    background: url(../img/texture_layer.png) repeat;
+  background: url(../img/texture_layer.png) repeat;
 }
 
 .featuresss, .image-parallax  {
@@ -1070,7 +1070,8 @@ div.content-box.big div.content-box-info p {
 }
 
 .fun-wrap {
-    background: url('../img/plx3.jpg') 50% 0  no-repeat fixed;
+  background: url('../img/plx3.jpg') 50% 0  no-repeat fixed;
+  background-size: cover;
 }
 
 
