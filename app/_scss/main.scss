@@ -257,10 +257,33 @@ section {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .testimonial-wrap,
   .fun-wrap {
     background-position-y: center;
-    background-size: 302%;
+    background-size: 290%;
+  }
+}
+
+@media (min-width: 320px) {
+  .testimonial-wrap,
+  .fun-wrap {
+    background-position-y: center;
+    background-size: 3000%;
+  }
+}
+
+@media (min-width: 568px) {
+  .testimonial-wrap,
+  .fun-wrap {
+    background-position-y: center;
+    background-size: 3000%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .testimonial-wrap,
+  .fun-wrap {
+    background-position-y: center;
   }
 }
