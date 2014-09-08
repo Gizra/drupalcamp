@@ -127,13 +127,6 @@ section {
     > div {
       float: right;
 
-      &:first-child {
-
-        @media (min-width: 992px) {
-          margin-right: 95px;
-        }
-      }
-
       .team-member-image {
 
         img {
