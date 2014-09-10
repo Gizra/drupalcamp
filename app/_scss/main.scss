@@ -122,19 +122,26 @@ section {
     }
   }
 
-  .team-members {
+  .team-wrap {
 
-    > div {
-      float: right;
+    .sub-title.text-center {
+      padding-bottom: 15px;
+    }
 
-      .team-member-image {
+    .team-members {
 
-        img {
-          width: 100%;
-        }
+      > div {
+        float: right;
 
-        &:hover img{
-          @include transform(rotate(0deg));
+        .team-member-image {
+
+          img {
+            width: 100%;
+          }
+
+          &:hover img{
+            @include transform(rotate(0deg));
+          }
         }
       }
     }
@@ -217,6 +224,15 @@ section {
       .hall {
         margin-left: 70px;
       }
+    }
+  }
+
+  .tickets-order {
+    font-size: 17px;
+
+    i {
+      padding-top: 5px;
+      font-size: 15px;
     }
   }
 }
