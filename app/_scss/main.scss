@@ -8,6 +8,8 @@ ul.text-slide {
   padding: 0;
 
   li {
+    line-height: 160px;
+    
     @media (max-width: 480px) {
       font-size: 25px;
     }

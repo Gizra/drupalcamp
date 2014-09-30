@@ -5,6 +5,32 @@ html {
   .text-center,
   .content-box-info {
     direction: rtl;
+
+    .date-place {
+      font-size: 44px;
+      line-height: 35px;
+
+      @media (max-width: 480px) {
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      @media (min-width: 480px) and (max-width: 767px) {
+        font-size: 21px;
+        line-height: 20px;
+      }
+
+      @media (min-width: 768px) and (max-width: 979px) {
+        font-size: 28px;
+        line-height: 20px;
+      }
+
+      a,
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
   }
 
   .navbar-nav {
