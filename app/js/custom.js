@@ -451,14 +451,14 @@ jQuery(document).ready(function(){
     }
 
 
-//    jQuery('.text-slide').bxSlider({
-//        controls: false,
-//        adaptiveHeight: true,
-//        pager: false,
-//        auto:true,
-//        mode:'fade',
-//        pause: 3000,
-//    });
+    //jQuery('.text-slide').bxSlider({
+    //    controls: true,
+    //    adaptiveHeight: false,
+    //    pager: false,
+    //    auto:true,
+    //    mode:'fade',
+    //    pause: 3000
+    //});
 
 
 });
