@@ -8,12 +8,20 @@ ul.text-slide {
   padding: 0;
 
   li {
+    line-height: 160px;
+
     @media (max-width: 480px) {
       font-size: 25px;
+      line-height: 60px;
     }
 
     @media (min-width: 480px) and (max-width: 767px) {
       font-size: 38px;
+      line-height: 80px;
+    }
+
+    @media (min-width: 768px) and (max-width: 979px) {
+      line-height: 100px;
     }
   }
 }
@@ -122,26 +130,26 @@ section {
     }
   }
 
-  .team-members {
+  .team-wrap {
 
-    > div {
-      float: right;
+    .sub-title.text-center {
+      padding-bottom: 15px;
+    }
 
-      &:first-child {
+    .team-members {
 
-        @media (min-width: 992px) {
-          margin-right: 95px;
-        }
-      }
+      > div {
+        float: right;
 
-      .team-member-image {
+        .team-member-image {
 
-        img {
-          width: 100%;
-        }
+          img {
+            width: 100%;
+          }
 
-        &:hover img{
-          @include transform(rotate(0deg));
+          &:hover img{
+            @include transform(rotate(0deg));
+          }
         }
       }
     }
@@ -224,6 +232,15 @@ section {
       .hall {
         margin-left: 70px;
       }
+    }
+  }
+
+  .tickets-order {
+    font-size: 17px;
+
+    i {
+      padding-top: 5px;
+      font-size: 15px;
     }
   }
 }
