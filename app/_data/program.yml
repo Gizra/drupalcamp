@@ -10,25 +10,39 @@
         he: "רועי סגל"
         en: "Roy Segall"
       definition:
-        he: "תאור מורחב על גבי הנואם"
-        en: "Speaker extented definition"
+        he: "מומחה דרופל"
+        en: "Drupal expert"
       url: "/#3"
       description: " הודעה זו תשמיד את עצמה בעוד 10 דקות ביחד עם המחשב שלך - ראה הוזהרת!!!! מלל ארוך לצורך הדגמה בלבדת יכול להיות שיעלם בסוף... רועי זוהי הודעה סמויה."
       image: human32x32.gif
 
 - hour: "09:30"
   data:
-    - title: "Keynote"
-      name: "זאב זורסקי"
-      url: "/#3"
-      image: human32x32.gif
+  - title:
+      he: "הרצאה ראשית"
+      en: "Keynote"
+    name:
+      he: "זאב סורסקיי"
+      en: "Zeev Suraski"
+    definition:
+      he: "ומייסד חברת Zend ממפתחי שפת PHP"
+      en: "CTO & Co-founder of Zend, Co-Architect of PHP"
+    url: "/#3"
+    image: human32x32.gif
 
 - hour: "10:30"
   data:
-    - name: "ליאור קיסוס"
-      title: "MEAN.io"
-      url: "/#3"
-      image: human32x32.gif
+  - title:
+      he: "מין.יו"
+      en: "MEAN.io"
+    name:
+      he: "ליאור קיסוס"
+      en: "Lior Kesos"
+    definition:
+      he: "מומחה דרופל"
+      en: "Drupal expert"
+    url: "/#3"
+    image: human32x32.gif
 
 - hour: "11:15"
   data:
