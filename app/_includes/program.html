@@ -30,18 +30,20 @@
                         <i class="fa fa-user"></i> {{ data.name }}
                       </a>
                        —
-                      <span class="title">
-                        {{ data.title }} <i class="fa fa-caret-square-o-down rotate"></i>
-                      </span>
-                      <p class="description">{{ data.description }}</p>
+                      <span class="title">{{ data.title }}</span>
+                      {% if data.description %}
+                        <span class="extend-button"> <i class="fa fa-caret-square-o-down rotate"></i> </span>
+                        <p class="description">{{ data.description }}</p>
+                      {% endif %}
                     </td>
-                    {% endfor  %}
+                    {% endfor %}
                   </tr>
                 {% else %}
                   <tr class="spread">
-                    <td class="text-center" colspan="3"><span> {{ item.hour }}  | </span>{{ item.title }}</td>
+                    <td>{{ item.hour }} </td>
+                    <td>{{ item.title }}</td>
                   </tr>
-                {% endif%}
+                {% endif %}
               {% endfor %}
               </tbody>
             </table>

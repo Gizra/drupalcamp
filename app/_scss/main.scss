@@ -175,10 +175,6 @@ section {
 
       .spread {
 
-        td {
-          width: 100%;
-        }
-
         background: rgba($cyan, .15);
       }
 
@@ -211,11 +207,15 @@ section {
 
       .title {
         font-weight: bold;
+      }
+
+      .extend-button {
+        cursor:pointer;
+        cursor:hand;
+
         @include transition-property(color);
         @include transition-duration(0.5s);
         @include transition-timing-function(ease-in);
-        cursor:pointer;
-        cursor:hand;
 
         &:hover {
           color: #000000;
