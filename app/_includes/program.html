@@ -26,13 +26,23 @@
                     <td>{{ item.hour }}</td>
                     {% for data in item.data  %}
                     <td>
-                      <a href="{{ data.url }}" class="name"> <img src="img/team/{{ data.image }}" alt="{{ data.name.he }}"/> {{ data.name.he }} </a>
+                      <a href="{{ data.url }}">
+                        <img src="img/team/{{ data.image }}" alt="{{ data.name.he }}"/>
+                      </a>
+                      <span class="name">{{ data.name.he }}</span>
                       <span>|</span>
                       <span class="title">{{ data.title.he }}</span>
+                      <span>|</span>
+                      <span class="name">{{ data.name.en }}</span>
                       {% if data.description %}
                         <span class="extend-button"> <i class="fa fa-caret-square-o-down rotate"></i> </span>
-                        <p class="description">{{ data.description }}</p>
                       {% endif %}
+                      <div>
+                        <span>{{ data.definition.he }}</span>
+                        <span>|</span>
+                        <span>{{ data.definition.en }}</span>
+                      </div>
+                      <p class="description">{{ data.description }}</p>
                     </td>
                     {% endfor %}
                   </tr>
