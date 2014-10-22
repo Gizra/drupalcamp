@@ -29,21 +29,22 @@
                       <a href="{{ data.url }}">
                         <img src="img/team/{{ data.image }}" alt="{{ data.name.he }}"/>
                       </a>
-                      <span class="name">{{ data.name.he }}</span>
-                      <span>-</span>
-                      <span class="title">{{ data.title.he }}</span>
-                      <span>|</span>
-                      <span class="name">{{ data.name.en }}</span>
-                      <span>-</span>
-                      <span class="title">{{ data.title.en }}</span>
-                      {% if data.description %}
-                        <span class="extend-button"> <i class="fa fa-caret-square-o-down rotate"></i> </span>
-                      {% endif %}
-                      <div>
-                        <span>{{ data.definition.he }}</span>
-                        <span>-</span>
-                        <span>{{ data.definition.en }}</span>
+                      <div class="wrapper">
+                        <div class="pull-right">
+                          <span class="name">{{ data.name.he }}</span>
+                          <span>-</span>
+                          <span class="title">{{ data.title.he }}</span>
+                        </div>
+                        <div class="pipe pull-right">|</div>
+                        <div dir="ltr" class="pull-right">
+                          <span class="name">{{ data.name.en }}</span>
+                          <span>-</span>
+                          <span class="title">{{ data.title.en }}</span>
+                        </div>
                       </div>
+                      {% if data.description %}
+                        <span class="extend-button pull-right"> <i class="fa fa-caret-square-o-down rotate"></i> </span>
+                      {% endif %}
                       <p class="description">{{ data.description }}</p>
                     </td>
                     {% endfor %}
