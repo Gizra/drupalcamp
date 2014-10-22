@@ -6,10 +6,6 @@
         <div class="col-md-12 big-title">
           <h2>תוכנית הכנס</h2>
         </div>
-        <div class="clearfix"></div>
-        <div class="col-md-12 sub-title text-center">
-          <h3>דרופלקאמפ ישראל הינו הכנס המרכזי במהלך השנה המפגיש ומחבר את חברי הקהילה כולה ומאפשר לחברים חדשים שער כניסה נעים ועשיר.</h3>
-        </div>
       </div>
       <!-- /Title row -->
 
@@ -27,7 +23,7 @@
                     {% for data in item.data  %}
                     <td>
                       <a href="{{ data.url }}">
-                        <img src="img/team/{{ data.image }}" alt="{{ data.name.he }}"/>
+                        <img src="img/team/{{ data.image }}" width="48" height="48" alt="{{ data.name.he }}"/>
                       </a>
                       <div class="wrapper">
                         <div class="pull-right">
