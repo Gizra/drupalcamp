@@ -3,28 +3,37 @@
 
 - hour: "09:00"
   data:
-    - title: "רועי סגל - פתיחה"
-      name: "Roy Segall - Opening"
+    - title:
+        he: "פתיחה"
+        en: "Opening"
+      name:
+        he: "רועי סגל"
+        en: "Roy Segall"
+      definition:
       url: "/#3"
-      description: 'some text very lomg here yes its a text....'
+      description: "מלל ארוך לצורך הדגמה בלבדת יכול להיות שיעלם בסוף... רועי זוהי הודעה סמויה."
+      image: human32x32.gif
 
 - hour: "09:30"
   data:
     - title: "Keynote"
       name: "זאב זורסקי"
       url: "/#3"
+      image: human32x32.gif
 
 - hour: "10:30"
   data:
     - name: "ליאור קיסוס"
       title: "MEAN.io"
       url: "/#3"
+      image: human32x32.gif
 
 - hour: "11:15"
   data:
     - name: "אמתי בורשטיין"
       title: "Restful & Zariz"
       url: "/#3"
+      image: human32x32.gif
 
 - hour: "12:00"
   title: "ארוחת צהריים"
@@ -34,18 +43,21 @@
     - title: "Drupal 8"
       name: "רועי סגל"
       url: "/#5"
+      image: human32x32.gif
 
 - hour: "13:45"
   data:
     - title: " אבטחה בדרופל"
       name: "רן בר-זיק"
       url: "/#7"
+      image: human32x32.gif
 
 - hour: "14:30"
   data:
     - title: "Theming בדרופל 7 ו-8"
       name: "ישראל שמואלי"
       url: "/#9"
+      image: human32x32.gif
 
 - hour: "15:15"
   title: "הפסקה"
@@ -55,16 +67,18 @@
     - title: "דרופל ואנגולר"
       name: "אורי שקד"
       url: "/#9"
+      image: human32x32.gif
 
 - hour: "16:15"
   data:
     - title: "מבוא לדרופל"
       name: "רועי קרן"
       url: "/#9"
-
+      image: human32x32.gif
 
 - hour: "17:00"
   data:
     - title: "סגירה"
       name: "רועי סגל"
       url: "/#9"
+      image: human32x32.gif
