@@ -1,14 +1,10 @@
-<section id="section4" class="program">
+<section id="program" class="program">
   <div class="service-wrap">
     <div class="container">
       <!-- Title row -->
       <div class="row">
         <div class="col-md-12 big-title">
           <h2>תוכנית הכנס</h2>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-md-12 sub-title text-center">
-          <h3>דרופלקאמפ ישראל הינו הכנס המרכזי במהלך השנה המפגיש ומחבר את חברי הקהילה כולה ומאפשר לחברים חדשים שער כניסה נעים ועשיר.</h3>
         </div>
       </div>
       <!-- /Title row -->
@@ -18,70 +14,44 @@
         <div class='col-sm-12'>
           <div class="table-wrapper">
             <!--Desktop table-->
-            <table class="table hidden-xs">
+            <table class="table">
               <tbody>
-              <thead>
-                <tr>
-                  <th>&nbsp;</th>
-                  <th>אולם - 1</th>
-                  <th>אולם - 2</th>
-                </tr>
-              </thead>
               {% for item in site.data.program %}
                 {% if item.data %}
                   <tr>
                     <td>{{ item.hour }}</td>
                     {% for data in item.data  %}
                     <td>
-                      <a href="{{ data.url }}" class="name">
-                        <i class="fa fa-user"></i> {{ data.name }}
+                      <a href="{{ data.url }}">
+                        <img src="img/team/{{ data.image }}" width="48" height="48" alt="{{ data.name.he }}"/>
                       </a>
-                       —
-                      <span class="title">
-                        {{ data.title }} <i class="fa fa-caret-square-o-down rotate"></i>
-                      </span>
+                      <div class="wrapper">
+                        <div class="pull-right">
+                          <span class="name">{{ data.name.he }}</span>
+                          <span>-</span>
+                          <span class="title">{{ data.title.he }}</span>
+                        </div>
+                        <div class="pipe pull-right">|</div>
+                        <div dir="ltr" class="pull-right">
+                          <span class="name">{{ data.name.en }}</span>
+                          <span>-</span>
+                          <span class="title">{{ data.title.en }}</span>
+                        </div>
+                      </div>
+                      {% if data.description %}
+                        <span class="extend-button pull-right"> <i class="fa fa-caret-square-o-down rotate"></i> </span>
+                      {% endif %}
                       <p class="description">{{ data.description }}</p>
                     </td>
-                    {% endfor  %}
+                    {% endfor %}
                   </tr>
                 {% else %}
                   <tr class="spread">
-                    <td class="text-center" colspan="3"><span> {{ item.hour }}  | </span>{{ item.title }}</td>
+                    <td>{{ item.hour }}</td>
+                    <td>{{ item.title }}</td>
                   </tr>
-                {% endif%}
+                {% endif %}
               {% endfor %}
-              </tbody>
-            </table>
-
-            <!--Small-devices table-->
-            <table class="table small-devices hidden-lg hidden-md hidden-sm">
-              <tbody>
-                {% for item in site.data.program %}
-                {% if item.data %}
-                <tr>
-                  <td colspan="2" class="hour text-center">{{ item.hour }}</td>
-                </tr>
-                {% for data in item.data %}
-                <tr>
-                <td colspan="2">
-                  <span class="hall"><strong>אולם - {{ forloop.index }} </strong></span>
-                  <a href="{{ data.url }}" class="name">
-                    <i class="fa fa-user"></i> {{ data.name }}
-                  </a>
-                  —
-                  <span class="title">
-                    {{ data.title }} <i class="fa fa-caret-square-o-down rotate"></i>
-                  </span>
-                  <p class="description">{{ data.description }}</p>
-                 </td>
-                  {% endfor  %}
-                </tr>
-                {% else %}
-                <tr class="spread">
-                  <td class="text-center" colspan="2"><span> {{ item.hour }}  | </span>{{ item.title }}</td>
-                </tr>
-                {% endif%}
-                {% endfor %}
               </tbody>
             </table>
           </div>
