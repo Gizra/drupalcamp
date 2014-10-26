@@ -15,11 +15,11 @@ title: DrupalCamp IL 14
 
   
 <!-- Program -->
-  {% if site.program_active %}
-    {% include program.html %}
-  {% else %}
-    {% include lecture_contact_form.html %}
-  {% endif %}
+{% if site.program_active %}
+  {% include program.html %}
+{% else %}
+  {% include lecture_contact_form.html %}
+{% endif %}
 <!-- /Program -->
 
 <!-- Section 6 -->
